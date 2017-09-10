@@ -11,6 +11,7 @@
 
 #mainContent{
     padding-top: 150px;
+
 }
 
 .center {
@@ -36,6 +37,12 @@
     /*color: red;*/
     width: 200px;
 }
+
+#about {
+    max-width: 400px;
+    text-align: justify;
+}
+
 
 .sliding-middle-out {
     display: inline-block;
@@ -71,27 +78,33 @@
 .project {
     margin: 50px auto;
     width: 80%;
-    background-color: antiquewhite;
+    border-bottom: solid 1px;
+    border-color: #999;
 }
 
 .projectContent{
     padding: 30px;
     position: relative;
 }
-.pronectImageContainter{
+.projectImageContainter{
     text-align: center;
     padding: 30px;
 }
 
 
 .projectLanguages {
-    color: darkviolet;
+    color: #999;
 }
 
 .projectLinks {
     position: absolute;
     bottom: 10%;
     left: 30px;
+
+}
+
+.projectLinks * {
+    margin-right: 5px;
 }
 
 .projectDescription{
@@ -105,7 +118,7 @@
 }
 
 @media (max-width:770px){
-    .pronectImageContainter{
+    .projectImageContainter{
         display: none !important;
     }
 
