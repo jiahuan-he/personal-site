@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <!--<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
@@ -40,17 +39,17 @@
     </div>
 
 <script>
-    const p1 = document.getElementById("p1");
+    const _p2 = document.getElementById("p2");
 
 
-    p2.onmouseenter = function () {
+    _p2.onmouseenter = function () {
         const texts = document.getElementById("p2").getElementsByClassName("text-link");
         for(let i=0 ; i<texts.length; i++){
             texts[i].classList.add("text-link-hover");
         }
     };
 
-    p2.onmouseleave = function () {
+    _p2.onmouseleave = function () {
         const texts = document.getElementById("p2").getElementsByClassName("text-link");
         for(let i=0 ; i<texts.length; i++){
             texts[i].classList.remove("text-link-hover");

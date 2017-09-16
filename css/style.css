@@ -51,10 +51,10 @@
     content: '';
     display: block;
     margin: auto;
-    height: 3px;
+    height: 2px;
     width: 0px;
     background: transparent;
-    transition: width .3s ease, background-color 0.3s ease;
+    transition: width .2s ease, background-color 0.2s ease;
 }
 .sliding-middle-out:hover:after {
     width: 100%;
@@ -130,9 +130,9 @@
 }
 
 .text-link-hover{
-
-    font-weight: bold;
-    text-decoration: underline;
+    /*font-weight: bold;*/
+    text-decoration: underline ;
+    font-style: italic;
 }
 
 .text-link a{
