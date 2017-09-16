@@ -26,12 +26,12 @@
             </ul>
         </nav>
         <div id="about">
-            <p>
-                Hi, I'm Jiahuan He, a.k.a. Geoffrey. I'm currently in my third year of Computer Science at U of S.
+            <p id="p1">
+                Hi, I'm Jiahuan He, a.k.a. <span class="">Geoffrey</span>. I'm currently in my  <span class="">third year</span> of Computer Science program at the U of S.
             </p>
-            <p>
-                I have a strong passion for making applications, and I'm most interested in web and IOS development.
-                In the summer of 2017, I self-taught swift and launched my first ios app at the App Store.I have also build a few SPA demos using React.
+            <p id="p2">
+                I have a strong passion for making real world applications, and I'm most interested in web and IOS development.
+                In the summer of 2017, I self taught Swift and launched my <span class="text-link"><a href="#">first IOS app</a></span> at the App Store.I have also built a few single page application <span class="text-link"><a href="#">demos</a></span> using React.
             </p>
             <p>
 
@@ -39,7 +39,26 @@
         </div>
     </div>
 
+<script>
+    const p1 = document.getElementById("p1");
 
+
+    p2.onmouseenter = function () {
+        const texts = document.getElementById("p2").getElementsByClassName("text-link");
+        for(let i=0 ; i<texts.length; i++){
+            texts[i].classList.add("text-link-hover");
+        }
+    };
+
+    p2.onmouseleave = function () {
+        const texts = document.getElementById("p2").getElementsByClassName("text-link");
+        for(let i=0 ; i<texts.length; i++){
+            texts[i].classList.remove("text-link-hover");
+        }
+    };
+
+
+</script>
 
 </div>
 </body>
