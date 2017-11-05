@@ -14,16 +14,16 @@
   padding: 0; }
 
 #nav li {
-  font-size: 14px;
+  font-size: 15px;
   display: inline;
   padding: 0 15px 0 15px;
-  border-left: red solid 1px; }
+  border-left: red solid 2px; }
 
 #nav li:first-child {
   padding-left: 0;
   border-left: none; }
 
-#about {
+#content {
   max-width: 500px;
   text-align: justify; }
 
@@ -47,9 +47,37 @@
   text-decoration: none;
   color: black; }
 
+#projects ul {
+  list-style: none;
+  padding-left: 0; }
+
+#projects li {
+  margin-bottom: 10px; }
+
+#projects a {
+  color: black; }
+
+.hover-red-underline:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+  -webkit-text-decoration-color: red; }
+
+.hover-red-underline {
+  text-decoration: underline; }
+
+.project-title {
+  font-size: 16px;
+  font-weight: bolder; }
+
+.project-content {
+  margin-top: 4px; }
+
 #header {
   display: inline-block;
   min-width: 400px; }
+
+.sub-header {
+  border-bottom: solid 2px red; }
 
 #header-text {
   padding-top: 8px;

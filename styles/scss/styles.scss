@@ -16,11 +16,13 @@
   list-style: none;
   padding: 0;
 }
+
+$special-text-color: red;
 #nav li{
-  font-size: 14px;
+  font-size: 15px;
   display: inline;
   padding: 0 15px 0 15px;
-  border-left: red solid 1px;
+  border-left: $special-text-color solid 2px;
 }
 
 #nav li:first-child{
@@ -28,23 +30,23 @@
   border-left: none;
 }
 
-#about {
+#content {
   max-width: 500px;
   text-align: justify;
 }
 
 .link{
-  color: red;
+  color: $special-text-color;
   text-decoration: none;
 }
 
 .link:hover{
-  color: red;
+  color: $special-text-color;
   text-decoration: underline;
 }
 
 .link:visited{
-  color: red;
+  color: $special-text-color;
 }
 
 .text-link-hover{
@@ -58,6 +60,42 @@
   color: black;
 }
 
+#projects h3{
+  //color: $special-text-color;
+}
+
+#projects ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+#projects li{
+  margin-bottom: 10px;
+}
+
+#projects a{
+  color: black;
+}
+
+.hover-red-underline:hover{
+  text-decoration: underline;
+  text-decoration-color: $special-text-color;
+  -webkit-text-decoration-color: $special-text-color;
+
+}
+
+.hover-red-underline{
+  text-decoration: underline;
+}
+
+.project-title{
+  font-size: 16px;
+ font-weight: bolder;
+}
+
+.project-content{
+  margin-top: 4px;
+}
 
 $header-width: 400px;
 $img-height: 60px;
@@ -65,6 +103,10 @@ $img-height: 60px;
 #header{
   display: inline-block;
   min-width: $header-width;
+}
+
+.sub-header{
+  border-bottom: solid 2px $special-text-color;
 }
 
 #header-text{
