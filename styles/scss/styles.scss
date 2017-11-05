@@ -78,14 +78,24 @@ $special-text-color: red;
 }
 
 .hover-red-underline:hover{
-  text-decoration: underline;
-  text-decoration-color: $special-text-color;
-  -webkit-text-decoration-color: $special-text-color;
+  //text-decoration: underline;
+  //border-bottom: solid red 2px;
+  background-image: linear-gradient(transparent, transparent 3px, $special-text-color);
+
+  //text-decoration-color: $special-text-color;
+  //-webkit-text-decoration-color: $special-text-color;
 
 }
 
 .hover-red-underline{
-  text-decoration: underline;
+  text-decoration: none;
+  color: black;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: 100% 6px;
+  background-image: linear-gradient(transparent, transparent 3px, black);
 }
 
 .project-title{

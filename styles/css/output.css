@@ -58,12 +58,17 @@
   color: black; }
 
 .hover-red-underline:hover {
-  text-decoration: underline;
-  text-decoration-color: red;
-  -webkit-text-decoration-color: red; }
+  background-image: linear-gradient(transparent, transparent 3px, red); }
 
 .hover-red-underline {
-  text-decoration: underline; }
+  text-decoration: none;
+  color: black;
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: 100% 6px;
+  background-image: linear-gradient(transparent, transparent 3px, black); }
 
 .project-title {
   font-size: 16px;
