@@ -1,5 +1,5 @@
 * {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
 }
 
@@ -138,4 +138,9 @@
 .text-link a{
     text-decoration: none;
     color: black;
+}
+
+.cactus{
+    height: 50px;
+    width: 50px;
 }

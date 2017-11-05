@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/css/output.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
@@ -13,18 +15,27 @@
 
 </head>
 <body>
-<div class="center" id="mainContainer">
-    <div id="mainContent">
-        <!--<img id="portrait" src="./img/doge.jpg">-->
-        <h1 class="center">Jiahuan He</h1>
-        <nav id="nav" class="center">
-            <ul>
-                <li> <a class="link sliding-middle-out" href="./projects/index.html" target="_blank">Projects</a></li>
-                <li> <a class="link sliding-middle-out" href="#">Github</a></li>
-                <li> <a class="link sliding-middle-out" href="#">Linkedin</a></li>
-            </ul>
-        </nav>
-        <div id="about">
+<div id="page-wrap">
+    <div id="header" class="left-align">
+
+            <div id="cactus-wrap"><img id="cactus-img" src="img/cactus-bnw.png"></div>
+            <div id="header-text" class="clear-margin-padding">
+                <div id="name" class="left-align">
+                    <h2 class="clear-margin-padding">Jiahuan He</h2>
+                </div>
+                <div id="links">
+                    <nav id="nav">
+                        <ul class="clear-margin-padding">
+                            <li > <a class="link sliding-middle-out" href="./projects/index.html" target="_blank">Projects</a></li>
+                            <li > <a class="link sliding-middle-out" href="#">GitHub</a></li>
+                            <li > <a class="link sliding-middle-out" href="#">Linkedin</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    <div id="about">
             <p id="p1">
                 Hi, I'm Jiahuan He, a.k.a. <span class="">Geoffrey</span>. I'm currently in my  <span class="">third year</span> of Computer Science program at the U of S.
             </p>
@@ -36,11 +47,9 @@
 
             </p>
         </div>
-    </div>
-
+<script src="scripts/script.js"></script>
 <script>
     const _p2 = document.getElementById("p2");
-
 
     _p2.onmouseenter = function () {
         const texts = document.getElementById("p2").getElementsByClassName("text-link");
