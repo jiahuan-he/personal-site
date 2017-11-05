@@ -13,7 +13,6 @@
 //
 
 #nav ul{
-  list-style: none;
   padding: 0;
 }
 
@@ -35,41 +34,23 @@ $special-text-color: red;
   text-align: justify;
 }
 
-.link{
-  color: $special-text-color;
-  text-decoration: none;
-}
 
-.link:hover{
-  color: $special-text-color;
-  text-decoration: underline;
-}
-
-.link:visited{
-  color: $special-text-color;
-}
 
 .text-link-hover{
-  /*font-weight: bold;*/
   text-decoration: underline ;
   font-style: italic;
 }
 
 .text-link a{
   text-decoration: none;
-  color: black;
 }
 
-#projects h3{
-  //color: $special-text-color;
-}
-
-#projects ul{
+ul{
   list-style: none;
   padding-left: 0;
 }
 
-#projects li{
+li{
   margin-bottom: 10px;
 }
 
@@ -78,13 +59,7 @@ $special-text-color: red;
 }
 
 .hover-red-underline:hover{
-  //text-decoration: underline;
-  //border-bottom: solid red 2px;
   background-image: linear-gradient(transparent, transparent 3px, $special-text-color);
-
-  //text-decoration-color: $special-text-color;
-  //-webkit-text-decoration-color: $special-text-color;
-
 }
 
 .hover-red-underline{
@@ -95,7 +70,7 @@ $special-text-color: red;
   background-position-x: center;
   background-position-y: bottom;
   background-size: 100% 6px;
-  background-image: linear-gradient(transparent, transparent 3px, black);
+  background-image: linear-gradient(transparent , transparent 4px, black);
 }
 
 .project-title{
@@ -104,7 +79,7 @@ $special-text-color: red;
 }
 
 .project-content{
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 $header-width: 400px;
