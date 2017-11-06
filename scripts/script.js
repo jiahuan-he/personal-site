@@ -18,3 +18,10 @@ for(let i=0; i<hoverRedUnderline.length; i++){
     hoverRedUnderline[i].onmouseout = changeToUncoloredImage;
 }
 
+// for phones
+if (document.documentElement.clientWidth < 600){
+    cactusImg.src = "img/cactus-color.png";
+    const element = document.getElementById("links");
+    element.outerHTML = "";
+}
+
