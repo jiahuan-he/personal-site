@@ -9,13 +9,16 @@ $list-content-margin-top: 1px;
 $list-content-margin-bottom: 4px;
 
 $header-min-width: $content-min-width;
-$img-height: 60px;
+$cactus-height: 50px;
+$cactus-margin-top:8px;
 
 $footer-to-bottom: 5px;
 
 $background-color: black;
-$text-color: lightgray;
-$decorator-color: rgb(43, 233, 138);
+$text-color: white;
+$decorator-color: red;
+
+$list-content-color: lightgray;
 
 * {
   font-family: 'Nunito', sans-serif;
@@ -109,6 +112,7 @@ $list-margin-bottom: 2px;
 .list-content{
   margin-top: $list-content-margin-top;
   margin-bottom: $list-content-margin-bottom;
+  color: $list-content-color;
 }
 
 #header{
@@ -126,7 +130,8 @@ $list-margin-bottom: 2px;
 }
 
 #cactus-wrap{
-  height: $img-height;
+  height: $cactus-height;
+  margin-top: $cactus-margin-top;
   float: left;
 }
 
