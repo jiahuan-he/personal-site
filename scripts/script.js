@@ -1,13 +1,20 @@
 const header = document.getElementById("header");
 const cactusImg = document.getElementById("cactus-img");
-header.onmouseover = function () {
-  cactusImg.src = "img/cactus-color.png";
+const hoverRedUnderline = document.getElementsByClassName("hover-red-underline");
+
+const changeToColoredImage = () => {
+    cactusImg.src = "img/cactus-color.png";
 };
-header.onmouseout = function () {
+
+const changeToUncoloredImage = () => {
     cactusImg.src = "img/cactus-bnw.png";
 };
 
+header.onmouseover = changeToColoredImage;
+header.onmouseout = changeToUncoloredImage;
 
-
-
+for(let i=0; i<hoverRedUnderline.length; i++){
+    hoverRedUnderline[i].onmouseover = changeToColoredImage;
+    hoverRedUnderline[i].onmouseout = changeToUncoloredImage;
+}
 

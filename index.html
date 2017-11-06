@@ -25,9 +25,8 @@
                 <div id="links">
                     <nav id="nav">
                         <ul class="clear-margin-padding">
-                            <li > <a  class="hover-red-underline" href="./projects/index.html" target="_blank">Projects</a></li>
-                            <li > <a class="hover-red-underline" href="#">GitHub</a></li>
-                            <li > <a class="hover-red-underline" href="#">Linkedin</a></li>
+                            <li > <a class="hover-red-underline" href="https://github.com/jiahuan-he" target="_blank">GitHub</a></li>
+                            <li > <a class="hover-red-underline" href="https://www.linkedin.com/in/jiahuan-he/" target="_blank">Linkedin</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -36,65 +35,61 @@
         </header>
     <div id="content">
             <div id="into">
-                <p id="p2">
+                <p>
                     Hi, I'm Jiahuan He, a.k.a. Geoffrey. I'm currently in my third year of Computer Science program at the USask.
-                    My passion for making real world applications drives me become a keen self-learner. Currently, I'm most interested in web and IOS development.
-
+                    My extensive interests in making real world applications made me become a keen learner. Currently, I'm actively looking for a software developer internship.
                 </p>
             </div>
             <div id="skills">
                 <h3 class="sub-header">Skills</h3>
                 <ul>
-                    <li ><span class="project-title">Web Dev</span></li>
-                    <li ><span class="project-title">IOS Dev</span></li>
-                    <li ><span class="project-title">Databases</span></li>
+                    <li class="list">
+                        <span class="list-title">Front-end</span>
+                        <p class="list-content">JavaScript, React, Redux, HTML, CSS, SASS</p>
+                    </li>
+                    <li class="list">
+                        <span class="list-title">Server</span>
+                        <p class="list-content">Java, Go, Node, PHP</p>
+                    </li>
+                    <li class="list">
+                        <span class="list-title">Databases</span>
+                        <p class="list-content">PostgreSQL, MongoDB</p>
+                    </li>
+                    <li class="list">
+                        <span class="list-title">IOS</span>
+                        <p class="list-content">Swift, Cocoa Touch, Core Data</p>
+                    </li>
                 </ul>
             </div>
 
             <div id="projects" >
                 <h3 class="sub-header">Projects</h3>
                 <ul>
-                    <li>
-                        <span class="project-title">My List</span>
-                        (<a class="hover-red-underline" href="#" >App Store</a>, <a class="hover-red-underline"  href="#" >Source</a>)
-                        <p class="project-content">A minimalist but handy task manager app built with Swift</p>
+                    <li class="list">
+                        <span class="list-title">My List</span>
+                        (<a class="hover-red-underline"
+                            href="https://itunes.apple.com/us/app/my-list-to-do-list-task-list/id1260218707?ls=1&mt=8" target="_blank">App Store</a>,
+                        <a class="hover-red-underline"
+                           href="https://github.com/jiahuan-he/my-list" target="_blank">Source</a>)
+                        <p class="list-content">A minimalist but powerful gesture-based task manager app built with Swift</p>
                     </li>
-                    <li>
-                        <span class="project-title">Notebook</span>
-                        (<a  href="#" class="hover-red-underline">Demo</a>, <a href="#"class="hover-red-underline">Source</a>)
-                        <p class="project-content">An online notebook with an embedded rich text editor built with React & Redux</p>
+                    <li class="list">
+                        <span class="list-title">Notebook</span>
+                        (<a  href="https://jiahuanhe.me/notebook" class="hover-red-underline">Demo</a>, <a target="_blank" href="https://github.com/jiahuan-he/note-book-app"class="hover-red-underline">Source</a>)
+                        <p class="list-content">An online notebook with an embedded rich text editor built with React & Redux</p>
                     </li>
-                    <li>
-                        <span class="project-title">Chat Rooms</span>
-                        (<a  href="#" class="hover-red-underline">Source</a>)
-                        <p class="project-content">Multi-user and multi-room chat rooms that were implemented using various languages and technologies
-                        including Java(socket, RMI, CORBA), C#(remoting), Go(socket, RPC) and different patterns including RESTful, SOAP</p>
+                    <li class="list">
+                        <span class="list-title">Chat Rooms</span>
+                        (<a  href="https://github.com/jiahuan-he/chat-rooms" target="_blank" class="hover-red-underline">Source</a>)
+                        <p class="list-content">Multi-user chat rooms that were implemented using various languages and technologies
+                        including Java(socket, RMI, CORBA), C#(remoting), Go(socket, RPC) and patterns including RESTful, SOAP</p>
                     </li>
                 </ul>
                 <p></p>
             </div>
+        <footer></footer>
         </div>
 <script src="scripts/script.js"></script>
-<script>
-    const _p2 = document.getElementById("p2");
-
-    _p2.onmouseenter = function () {
-        const texts = document.getElementById("p2").getElementsByClassName("text-link");
-        for(let i=0 ; i<texts.length; i++){
-            texts[i].classList.add("text-link-hover");
-        }
-    };
-
-    _p2.onmouseleave = function () {
-        const texts = document.getElementById("p2").getElementsByClassName("text-link");
-        for(let i=0 ; i<texts.length; i++){
-            texts[i].classList.remove("text-link-hover");
-        }
-    };
-
-
-</script>
-
 </div>
 </body>
 </html>
