@@ -13,9 +13,19 @@ $img-height: 60px;
 
 $footer-to-bottom: 5px;
 
+$background-color: black;
+$text-color: lightgray;
+$decorator-color: rgb(43, 233, 138);
+
 * {
   font-family: 'Nunito', sans-serif;
   box-sizing: border-box;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+#name h2{
+  color: $decorator-color;
 }
 
 #page-wrap {
@@ -31,11 +41,11 @@ $footer-to-bottom: 5px;
   padding: 0;
 }
 
-$special-text-color: red;
+
 #nav li{
   display: inline;
   padding: 0 15px 0 15px;
-  border-left: $special-text-color solid 2px;
+  border-left: $decorator-color solid 2px;
 }
 
 #nav li:first-child{
@@ -67,27 +77,23 @@ li{
   margin-bottom: 10px;
 }
 
-#projects a{
-  color: black;
-}
-
 #projects ul{
   //margin-bottom: 2px;
 }
 
 .hover-red-underline:hover{
-  background-image: linear-gradient(transparent, transparent 3px, $special-text-color);
+  background-image: linear-gradient(transparent, transparent 2px, $decorator-color);
 }
 
 .hover-red-underline{
   text-decoration: none;
-  color: black;
+  //color: black;
   background-repeat: repeat-x;
   background-position: bottom;
   background-position-x: center;
   background-position-y: bottom;
   background-size: 100% 6px;
-  background-image: linear-gradient(transparent , transparent 4px, black);
+  background-image: linear-gradient(transparent , transparent 2px, $text-color);
 }
 
 $list-margin-bottom: 2px;
@@ -111,7 +117,7 @@ $list-margin-bottom: 2px;
 }
 
 .sub-header{
-  border-bottom: solid 2px $special-text-color;
+  border-bottom: solid 2px $decorator-color;
 }
 
 #header-text{
@@ -157,7 +163,7 @@ $list-margin-bottom: 2px;
 }
 
 footer{
-  border-top: red solid 1px;
+  border-top: $decorator-color solid 1px;
   position: absolute;
   bottom: $footer-to-bottom;
 }
