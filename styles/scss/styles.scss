@@ -14,11 +14,11 @@ $cactus-margin-top:8px;
 
 $footer-to-bottom: 5px;
 
-$background-color: black;
-$text-color: white;
-$decorator-color: red;
-
-$list-content-color: lightgray;
+$background-color: #5782BB;
+$text-color:  #FFFEEC ;
+$decorator-color:  #64D7D6;
+$name-color: $text-color;
+$list-content-color: #E9E2D0;
 
 * {
   font-family: 'Nunito', sans-serif;
@@ -28,7 +28,7 @@ $list-content-color: lightgray;
 }
 
 #name h2{
-  color: $decorator-color;
+  color: $name-color;
 }
 
 #page-wrap {
