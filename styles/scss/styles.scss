@@ -18,7 +18,7 @@ $background-color: #5782BB;
 $text-color:  #FFFEEC ;
 $decorator-color:  #64D7D6;
 $name-color: $text-color;
-$list-content-color: #E9E2D0;
+$list-content-color: #E7E9DE;
 
 * {
   font-family: 'Nunito', sans-serif;
@@ -26,6 +26,16 @@ $list-content-color: #E9E2D0;
   background-color: $background-color;
   color: $text-color;
 }
+
+html{
+  border-top: solid $decorator-color 2px;
+}
+
+body{
+  margin-top: 10px;
+}
+
+
 
 #name h2{
   color: $name-color;
@@ -39,22 +49,23 @@ $list-content-color: #E9E2D0;
   font-size: $font-size;
 }
 //
+#nav{
+  ul{
+    padding: 0;
+  }
 
-#nav ul{
-  padding: 0;
+  li{
+    display: inline;
+    padding: 0 15px 0 15px;
+    border-left: $decorator-color solid 2px;
+  }
+
+  li:first-child{
+    padding-left: 0;
+    border-left: none;
+  }
 }
 
-
-#nav li{
-  display: inline;
-  padding: 0 15px 0 15px;
-  border-left: $decorator-color solid 2px;
-}
-
-#nav li:first-child{
-  padding-left: 0;
-  border-left: none;
-}
 
 #content {
   max-width: $content-width;
@@ -99,6 +110,7 @@ li{
   background-image: linear-gradient(transparent , transparent 2px, $text-color);
 }
 
+
 $list-margin-bottom: 2px;
 .list{
   margin-bottom: $list-margin-bottom;
@@ -120,25 +132,20 @@ $list-margin-bottom: 2px;
   min-width: $header-min-width;
 }
 
+@keyframes sub-header-border-appear{
+  from{border-left: solid 6px transparent;}
+  to{border-left: solid 6px $decorator-color;}
+}
+
+@keyframes sub-header-title-fly-in {
+  from{left: -10px}
+  to{left: 0}
+}
+
 .sub-header{
   border-left: solid 6px $decorator-color;
   padding-left: 8px;
-}
-
-#header-text{
-  padding-top: 8px;
-  padding-left: 50px;
-}
-
-#cactus-wrap{
-  height: $cactus-height;
-  margin-top: $cactus-margin-top;
-  float: left;
-}
-
-#cactus-img{
-  max-height: 100%;
-  max-width: 100%;
+  animation: sub-header-border-appear 2s;
 }
 
 .clear-margin-padding{
