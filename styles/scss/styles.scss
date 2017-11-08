@@ -121,7 +121,8 @@ $list-margin-bottom: 2px;
 }
 
 .sub-header{
-  border-bottom: solid 2px $decorator-color;
+  border-left: solid 6px $decorator-color;
+  padding-left: 8px;
 }
 
 #header-text{
