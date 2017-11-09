@@ -4,11 +4,18 @@
   background-color: #5782BB;
   color: #FFFEEC; }
 
+h3 {
+  margin: 0; }
+
 html {
   border-top: solid #64D7D6 2px; }
 
 body {
   margin-top: 10px; }
+
+#email {
+  text-decoration: none;
+  color: greenyellow; }
 
 #name h2 {
   color: #FFFEEC; }
@@ -21,10 +28,11 @@ body {
   font-size: 14.5px; }
 
 #nav ul {
-  padding: 0; }
+  padding: 0;
+  margin-top: 5px; }
 #nav li {
   display: inline;
-  padding: 0 15px 0 15px;
+  padding: 0 20px 0 20px;
   border-left: #64D7D6 solid 2px; }
 #nav li:first-child {
   padding-left: 0;
@@ -88,9 +96,11 @@ li {
   to {
     left: 0; } }
 .sub-header {
-  border-left: solid 6px #64D7D6;
+  border-left: solid 6px transparent;
   padding-left: 8px;
-  animation: sub-header-border-appear 2s; }
+  animation: sub-header-border-appear 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards; }
 
 .clear-margin-padding {
   margin: 0;
