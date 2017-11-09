@@ -9,13 +9,41 @@ $list-content-margin-top: 1px;
 $list-content-margin-bottom: 4px;
 
 $header-min-width: $content-min-width;
-$img-height: 60px;
 
 $footer-to-bottom: 5px;
+
+$background-color: #5782BB;
+$text-color:  #FFFEEC ;
+$decorator-color:  #64D7D6;
+$name-color: $text-color;
+$list-content-color: #E7E9DE;
 
 * {
   font-family: 'Nunito', sans-serif;
   box-sizing: border-box;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+h3{
+  margin: 0;
+}
+
+html{
+  border-top: solid $decorator-color 2px;
+}
+
+body{
+  margin-top: 10px;
+}
+
+#email{
+  text-decoration: none;
+  color: greenyellow;
+}
+
+#name h2{
+  color: $name-color;
 }
 
 #page-wrap {
@@ -26,22 +54,24 @@ $footer-to-bottom: 5px;
   font-size: $font-size;
 }
 //
+#nav{
+  ul{
+    padding: 0;
+    margin-top: 5px;
+  }
 
-#nav ul{
-  padding: 0;
+  li{
+    display: inline;
+    padding: 0 20px 0 20px;
+    border-left: $decorator-color solid 2px;
+  }
+
+  li:first-child{
+    padding-left: 0;
+    border-left: none;
+  }
 }
 
-$special-text-color: red;
-#nav li{
-  display: inline;
-  padding: 0 15px 0 15px;
-  border-left: $special-text-color solid 2px;
-}
-
-#nav li:first-child{
-  padding-left: 0;
-  border-left: none;
-}
 
 #content {
   max-width: $content-width;
@@ -67,28 +97,25 @@ li{
   margin-bottom: 10px;
 }
 
-#projects a{
-  color: black;
-}
-
 #projects ul{
   //margin-bottom: 2px;
 }
 
 .hover-red-underline:hover{
-  background-image: linear-gradient(transparent, transparent 3px, $special-text-color);
+  background-image: linear-gradient(transparent, transparent 2px, $decorator-color);
 }
 
 .hover-red-underline{
   text-decoration: none;
-  color: black;
+  //color: black;
   background-repeat: repeat-x;
   background-position: bottom;
   background-position-x: center;
   background-position-y: bottom;
   background-size: 100% 6px;
-  background-image: linear-gradient(transparent , transparent 4px, black);
+  background-image: linear-gradient(transparent , transparent 2px, $text-color);
 }
+
 
 $list-margin-bottom: 2px;
 .list{
@@ -103,6 +130,7 @@ $list-margin-bottom: 2px;
 .list-content{
   margin-top: $list-content-margin-top;
   margin-bottom: $list-content-margin-bottom;
+  color: $list-content-color;
 }
 
 #header{
@@ -110,23 +138,22 @@ $list-margin-bottom: 2px;
   min-width: $header-min-width;
 }
 
+@keyframes sub-header-border-appear{
+  from{border-left: solid 6px transparent;}
+  to{border-left: solid 6px $decorator-color;}
+}
+
+@keyframes sub-header-title-fly-in {
+  from{left: -10px}
+  to{left: 0}
+}
+
 .sub-header{
-  border-bottom: solid 2px $special-text-color;
-}
-
-#header-text{
-  padding-top: 8px;
-  padding-left: 50px;
-}
-
-#cactus-wrap{
-  height: $img-height;
-  float: left;
-}
-
-#cactus-img{
-  max-height: 100%;
-  max-width: 100%;
+  border-left: solid 6px transparent;
+  padding-left: 8px;
+  animation: sub-header-border-appear 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode:forwards;
 }
 
 .clear-margin-padding{
@@ -136,10 +163,6 @@ $list-margin-bottom: 2px;
 
 
 @media only screen and (max-width: 500px) {
-  body {
-    //background-color: lightblue;
-    //margin: 0;
-  }
   footer{
     visibility: hidden;
   }
@@ -156,8 +179,10 @@ $list-margin-bottom: 2px;
   }
 }
 
+
+
 footer{
-  border-top: red solid 1px;
+  border-top: $decorator-color solid 1px;
   position: absolute;
   bottom: $footer-to-bottom;
 }

@@ -1,6 +1,24 @@
 * {
   font-family: 'Nunito', sans-serif;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #5782BB;
+  color: #FFFEEC; }
+
+h3 {
+  margin: 0; }
+
+html {
+  border-top: solid #64D7D6 2px; }
+
+body {
+  margin-top: 10px; }
+
+#email {
+  text-decoration: none;
+  color: greenyellow; }
+
+#name h2 {
+  color: #FFFEEC; }
 
 #page-wrap {
   display: table;
@@ -10,13 +28,12 @@
   font-size: 14.5px; }
 
 #nav ul {
-  padding: 0; }
-
+  padding: 0;
+  margin-top: 5px; }
 #nav li {
   display: inline;
-  padding: 0 15px 0 15px;
-  border-left: red solid 2px; }
-
+  padding: 0 20px 0 20px;
+  border-left: #64D7D6 solid 2px; }
 #nav li:first-child {
   padding-left: 0;
   border-left: none; }
@@ -40,21 +57,17 @@ ul {
 li {
   margin-bottom: 10px; }
 
-#projects a {
-  color: black; }
-
 .hover-red-underline:hover {
-  background-image: linear-gradient(transparent, transparent 3px, red); }
+  background-image: linear-gradient(transparent, transparent 2px, #64D7D6); }
 
 .hover-red-underline {
   text-decoration: none;
-  color: black;
   background-repeat: repeat-x;
   background-position: bottom;
   background-position-x: center;
   background-position-y: bottom;
   background-size: 100% 6px;
-  background-image: linear-gradient(transparent, transparent 4px, black); }
+  background-image: linear-gradient(transparent, transparent 2px, #FFFEEC); }
 
 .list {
   margin-bottom: 2px; }
@@ -65,26 +78,29 @@ li {
 
 .list-content {
   margin-top: 1px;
-  margin-bottom: 4px; }
+  margin-bottom: 4px;
+  color: #E7E9DE; }
 
 #header {
   display: inline-block;
   min-width: 200px; }
 
+@keyframes sub-header-border-appear {
+  from {
+    border-left: solid 6px transparent; }
+  to {
+    border-left: solid 6px #64D7D6; } }
+@keyframes sub-header-title-fly-in {
+  from {
+    left: -10px; }
+  to {
+    left: 0; } }
 .sub-header {
-  border-bottom: solid 2px red; }
-
-#header-text {
-  padding-top: 8px;
-  padding-left: 50px; }
-
-#cactus-wrap {
-  height: 60px;
-  float: left; }
-
-#cactus-img {
-  max-height: 100%;
-  max-width: 100%; }
+  border-left: solid 6px transparent;
+  padding-left: 8px;
+  animation: sub-header-border-appear 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards; }
 
 .clear-margin-padding {
   margin: 0;
@@ -103,7 +119,7 @@ li {
   #nav ul {
     visibility: hidden; } }
 footer {
-  border-top: red solid 1px;
+  border-top: #64D7D6 solid 1px;
   position: absolute;
   bottom: 5px; }
 
