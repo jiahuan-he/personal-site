@@ -4,18 +4,26 @@
   background-color: #5782BB;
   color: #FFFEEC; }
 
-h3 {
+.sub-header h3 {
   margin: 0; }
 
 html {
-  border-top: solid #64D7D6 2px; }
+  border-top: solid transparent 3px;
+  animation: html-border-top 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards; }
 
+@keyframes html-border-top {
+  from {
+    border-top: solid transparent 3px; }
+  to {
+    border-top: solid #64D7D6 3px; } }
 body {
   margin-top: 10px; }
 
 #email {
   text-decoration: none;
-  color: greenyellow; }
+  color: #FE9797; }
 
 #name h2 {
   color: #FFFEEC; }
@@ -32,12 +40,19 @@ body {
   margin-top: 5px; }
 #nav li {
   display: inline;
-  padding: 0 20px 0 20px;
-  border-left: #64D7D6 solid 2px; }
+  padding: 0 20px 0 20px; }
 #nav li:first-child {
-  padding-left: 0;
-  border-left: none; }
-
+  padding-left: 0; }
+#nav li:not(:first-child) {
+  border-left: transparent solid 2px;
+  animation: 1s li-border-left;
+  animation-delay: 1s;
+  animation-fill-mode: forwards; }
+@keyframes li-border-left {
+  from {
+    border-left: transparent solid 2px; }
+  to {
+    border-left: #64D7D6 solid 2px; } }
 #content {
   max-width: 500px;
   min-width: 200px;
@@ -99,7 +114,7 @@ li {
   border-left: solid 6px transparent;
   padding-left: 8px;
   animation: sub-header-border-appear 1s;
-  animation-delay: 0.5s;
+  animation-delay: 1s;
   animation-fill-mode: forwards; }
 
 .clear-margin-padding {
@@ -119,8 +134,17 @@ li {
   #nav ul {
     visibility: hidden; } }
 footer {
-  border-top: #64D7D6 solid 1px;
+  border-top: transparent solid 1px;
   position: absolute;
-  bottom: 5px; }
+  bottom: 5px;
+  animation: footer-border-top 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards; }
+
+@keyframes footer-border-top {
+  from {
+    border-top: transparent solid 1px; }
+  to {
+    border-top: #64D7D6 solid 1px; } }
 
 /*# sourceMappingURL=output.css.map */
