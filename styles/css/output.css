@@ -1,3 +1,10 @@
+::selection {
+  background: #FE9797; }
+
+::-moz-selection {
+  background: #FE9797;
+  /* Gecko Browsers */ }
+
 * {
   font-family: 'Nunito', sans-serif;
   box-sizing: border-box;
@@ -45,14 +52,8 @@ body {
   padding-left: 0; }
 #nav li:not(:first-child) {
   border-left: transparent solid 2px;
-  animation: 1s li-border-left;
-  animation-delay: 1s;
-  animation-fill-mode: forwards; }
-@keyframes li-border-left {
-  from {
-    border-left: transparent solid 2px; }
-  to {
-    border-left: #64D7D6 solid 2px; } }
+  border-left: #64D7D6 solid 2px; }
+
 #content {
   max-width: 500px;
   min-width: 200px;

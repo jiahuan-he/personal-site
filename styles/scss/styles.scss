@@ -26,7 +26,13 @@ $email-color: #FE9797;
 $delay: 1s;
 $duration: 1s;
 
+::selection{
+  background: $email-color;
+}
 
+::-moz-selection {
+  background: $email-color; /* Gecko Browsers */
+}
 
 * {
   font-family: 'Nunito', sans-serif;
@@ -96,20 +102,20 @@ body{
 
   li:not(:first-child){
     border-left: transparent solid 2px;
-    animation: $duration li-border-left;
-    animation-delay: $delay;
-    animation-fill-mode: forwards;
+    border-left: $decorator-color solid 2px;
+    //animation: $duration li-border-left;
+    //animation-delay: $delay;
+    //animation-fill-mode: forwards;
   }
 
-  @keyframes li-border-left {
-    from{
-      border-left: transparent solid 2px;
-    }
-    to{
-      border-left: $decorator-color solid 2px;
-    }
-
-  }
+  //@keyframes li-border-left {
+  //  from{
+  //    border-left: transparent solid 2px;
+  //  }
+  //  to{
+  //    border-left: $decorator-color solid 2px;
+  //  }
+  //}
 }
 
 
